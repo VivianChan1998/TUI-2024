@@ -19,19 +19,13 @@ function App() {
     if (loading) {
       return <div>Loading...</div>;
     }
-  
-    if (error) {
-      return <div>Error!</div>;
-    }
-
 
     console.log(data)
 
   return (
     <div className="App">
       <h1>Theory and Practice of Tangible User Interfaces</h1>
-      <h1>Fall 2024</h1>
-      <h3>INFO C262 & NWMEDIA C262</h3>
+      <h3>Fall 2024, INFO C262 & NWMEDIA C262</h3>
 
       <ClassInfo />
 

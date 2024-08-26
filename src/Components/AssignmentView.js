@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import Select from 'react-select'
 import Microlink from '@microlink/react'
+import { LinkPreview } from '@dhaiwat10/react-link-preview';
 
 const options = [
     { value: 'My Profile', label: 'My Profile' },
@@ -35,19 +36,31 @@ export default function AssignmentView(props)
     }
 
     return (
-        <div>
-            <Select options={options}
-            onChange={onSelect}
-            defaultValue={options[options.length-1]}
-            value={{label: selectedOption}}
-            />
+        <div className="block select">
+            <h3>Assignments</h3>
 
-            <Select options={nameOptions}
-            onChange={onSelectName}
-            defaultValue='All'
-            value={{label: selectedName}}
-            />
+            <div className="select-box-container">
+                <div className="select-box">
+                    <Select options={options}
+                    onChange={onSelect}
+                    defaultValue={options[options.length-1]}
+                    value={{label: selectedOption}}
+                    />
+                </div>
 
+                <div className="select-box">
+                    <Select options={nameOptions}
+                    onChange={onSelectName}
+                    defaultValue='All'
+                    value={{label: selectedName}}
+                    />
+                </div>
+            </div>
+
+            
+            
+
+            
             {
                 props.data.map( el => {
                     if (selectedName != 'All') {
@@ -57,21 +70,23 @@ export default function AssignmentView(props)
                             return (
                                 keys.map( k => {
                                     if (k == 'NAME') return null
+                                    if (el[k] === "") return null
                                     else {
-                                        return <LinkBox url = {el[k]} />
+                                        return <LinkBox url = {el[k]} keyName={k}  />
                                     }
                                 })
                             )
                         }
                     }
                     else {
+                        if (el[selectedOption] === "") return null
                         return(
-                            <div>
+                            <div className="link-box-wrapper">
                                 <p>{el['NAME']}</p>
-                                <LinkBox url = {el[selectedOption]} />
+                                <LinkBox url = {el[selectedOption]} keyName={selectedOption}  />
                             </div>
                         )
-                    }
+                }
                 }
                 )
             }
@@ -85,6 +100,13 @@ export default function AssignmentView(props)
 function LinkBox(props)
 {
     console.log(props.url)
+    if(props.url === ""){
+        return(
+            <div>
+                (No submission available!)
+            </div>
+        )
+    }
     return (
         <div>
             {/*<a href={props.url}>click</a>*/}

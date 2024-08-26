@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/TUI-2024/static/css/main.610e7422.css",
+    "main.js": "/TUI-2024/static/js/main.20966e73.js",
+    "static/js/453.bb828c5d.chunk.js": "/TUI-2024/static/js/453.bb828c5d.chunk.js",
+    "index.html": "/TUI-2024/index.html",
+    "main.610e7422.css.map": "/TUI-2024/static/css/main.610e7422.css.map",
+    "main.20966e73.js.map": "/TUI-2024/static/js/main.20966e73.js.map",
+    "453.bb828c5d.chunk.js.map": "/TUI-2024/static/js/453.bb828c5d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.610e7422.css",
+    "static/js/main.20966e73.js"
+  ]
+}
