@@ -16,6 +16,10 @@ export default function ClassInfo()
             <br/>
 
             <iframe src="https://calendar.google.com/calendar/appointments/AcZssZ0a5jjN67409Tjx5hYIsdk2CvgUEFjSJAsE6Tg=?gv=true" style={{"width": "40%", "border": "1px solid gray"}} frameborder="0"></iframe>
+
+
+            <h3>Submit Assignment</h3>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdLMyQVDKZ0DMhELH5H1zHJObLmcIKOBgAYkjQCbRpXwkfzUA/viewform">Click to submit!</a>
         </div>
     )
 }
