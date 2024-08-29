@@ -4,8 +4,8 @@ import Microlink from '@microlink/react'
 import { LinkPreview } from '@dhaiwat10/react-link-preview';
 
 const options = [
-    { value: 'My Profile', label: 'My Profile' },
-    { value: 'Lab1 - Intro to Physical Computing', label: 'Lab1 - Intro to Physical Computing' }
+    { value: 'My Profile', label: 'My Profile' }
+    /*{ value: 'Lab1 - Intro to Physical Computing', label: 'Lab1 - Intro to Physical Computing' }*/
 ]
 
 
@@ -100,7 +100,7 @@ export default function AssignmentView(props)
 function LinkBox(props)
 {
     console.log(props.url)
-    if(props.url === ""){
+    if(props.url === undefined){
         return(
             <div>
                 (No submission available!)
@@ -113,4 +113,5 @@ function LinkBox(props)
             <Microlink url={props.url} />
         </div>
     )
+    
 }
