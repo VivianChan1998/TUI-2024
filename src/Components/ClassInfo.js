@@ -5,7 +5,7 @@ export default function ClassInfo()
     return(
         <div className='block class-info'>
 
-            <h3>Office Hours</h3>
+            <h3>Office Hours 📖</h3>
             <p>
                 <b>Kimiko Ryokai</b>  by appointment. (kimiko@berkeley.edu)
             </p>
@@ -18,7 +18,7 @@ export default function ClassInfo()
             <iframe src="https://calendar.google.com/calendar/appointments/AcZssZ0a5jjN67409Tjx5hYIsdk2CvgUEFjSJAsE6Tg=?gv=true" style={{"width": "40%", "border": "1px solid gray"}} frameborder="0"></iframe>
 
 
-            <h3>Submit Assignment</h3>
+            <h3>Submit Assignment 🏠</h3>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdLMyQVDKZ0DMhELH5H1zHJObLmcIKOBgAYkjQCbRpXwkfzUA/viewform">Click to submit!</a>
         </div>
     )

@@ -1,11 +1,23 @@
 import React, {useState} from "react";
 import Select from 'react-select'
 import Microlink from '@microlink/react'
-import { LinkPreview } from '@dhaiwat10/react-link-preview';
 
 const options = [
-    { value: 'My Profile', label: 'My Profile' }
-    /*{ value: 'Lab1 - Intro to Physical Computing', label: 'Lab1 - Intro to Physical Computing' }*/
+    { value: 'My Profile', label: 'My Profile' },
+    { value: 'Tangible Bits', label: 'Tangible Bits' },
+    { value: 'Lab1 - Intro to Physical Computing', label: 'Lab1 - Intro to Physical Computing' },
+    { value: 'Ambient Media', label: 'Ambient Media' },
+    { value: 'Lab 2 - Digital I/O', label: 'Lab 2 - Digital I/O' },
+    { value: 'Somaesthetics', label: 'Somaesthetics' },
+    { value: 'Lab 3 - Sensing: Potentiometer', label: 'Lab 3 - Sensing: Potentiometer' },
+    { value: 'Midterm Project Proposal', label: 'Midterm Project Proposal' },
+    { value: 'Lab 4 - Sensing: Force Sensors and Photocells', label: 'Lab 4 - Sensing: Force Sensors and Photocells' },
+    { value: 'Midterm Project Proposal', label: 'Midterm Project Proposal' },
+    { value: 'Human Centered Design', label: 'Human Centered Design' },
+    { value: 'Midterm Progress Sketches', label: 'Midterm Progress Sketches' },
+    { value: 'Post-human Design', label: 'Post-human Design' },
+    { value: 'Lab 5 - Output: Piezo Speakers', label: 'Lab 5 - Output: Piezo Speakers' }
+    
 ]
 
 
@@ -37,7 +49,7 @@ export default function AssignmentView(props)
 
     return (
         <div className="block select">
-            <h3>Assignments</h3>
+            <h3>Assignments 💡</h3>
 
             <div className="select-box-container">
                 <div className="select-box">
@@ -66,11 +78,10 @@ export default function AssignmentView(props)
                     if (selectedName != 'All') {
                         if (el['NAME'] == selectedName) {
                             var keys = Object.keys(el)
-                            console.log(keys)
                             return (
                                 keys.map( k => {
                                     if (k == 'NAME') return null
-                                    if (el[k] === "") return null
+                                    if (el[k] === "" || el[k] === undefined) return null
                                     else {
                                         return <LinkBox url = {el[k]} keyName={k}  />
                                     }
@@ -79,7 +90,7 @@ export default function AssignmentView(props)
                         }
                     }
                     else {
-                        if (el[selectedOption] === "") return null
+                        if (el[selectedOption] === "" || el[selectedOption] === undefined) return null
                         return(
                             <div className="link-box-wrapper">
                                 <p>{el['NAME']}</p>
@@ -97,13 +108,11 @@ export default function AssignmentView(props)
 
 //https://spreadsheets.google.com/feeds/cells/12igoimslU9X8N7kIS3TIIpi5guKClBLN2b1E6CG3ric/1/public/full?alt=json
 
-function LinkBox(props)
+export function LinkBox(props)
 {
-    console.log(props.url)
     if(props.url === undefined){
         return(
             <div>
-                (No submission available!)
             </div>
         )
     }

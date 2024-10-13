@@ -8,6 +8,10 @@
   --title-color: rgb(125, 54, 66);
 }
 
+.App h1, h3 {
+  color: rgb(58, 43, 43);
+}
+
 .block {
   margin: 5vh 0 3vh 0;
 }
@@ -17,7 +21,8 @@
 }
 
 .block p {
-  line-height: 1;
+  line-height: 1.2;
+  color: gray;
 }
 
 .select-box-container {
