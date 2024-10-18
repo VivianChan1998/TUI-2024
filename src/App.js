@@ -2,7 +2,7 @@ import './App.css';
 import ClassInfo from './Components/ClassInfo';
 import Updates from './Components/Updates';
 import AssignmentView from './Components/AssignmentView';
-import { useState } from 'react';
+import Midterm from './Components/Midterm';
 import useGoogleSheets from 'use-google-sheets';
 
 
@@ -26,6 +26,8 @@ function App() {
     <div className="App">
       <h1>Theory and Practice of Tangible User Interfaces</h1>
       <h3>Fall 2024, INFO C262 & NWMEDIA C262</h3>
+
+      <Midterm />
 
       <ClassInfo />
 

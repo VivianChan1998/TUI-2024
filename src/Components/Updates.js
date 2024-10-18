@@ -4,12 +4,12 @@ import { LinkBox } from './AssignmentView';
 export default function Updates()
 {
     const links_lab = [
-        "https://medium.com/@aaron.rodden21/lab-5-piezo-speakers-the-ocarina-glove-dd8632987460",
-        "https://medium.com/@ankur_kela/piezo-lab-5d8650881491",
-        "https://medium.com/@edwardfraser_1948/lab-5-floaty-bird-bbb45e97b6c4",
-        "https://medium.com/@hannah_jiang/lab-5-piezo-speakers-a283d9d34138",
-        "https://medium.com/@matthieu.delarue/interact-with-light-and-force-sensors-in-arduino-3fba3be3968e",
-        "https://medium.com/@ria_antony/lab-5-output-piezo-speakers-0d4399d6df3c"
+        "https://medium.com/@tranmary/lab-6-output-dc-motors-ca4f9d7f6dad",
+        "https://medium.com/@liam_hatakenaka/lab-6-output-w-dc-motors-bf2085bb03f9",
+        "https://medium.com/@gyuyeon/lab-6-output-dc-motors-c9b31369a592",
+        "https://medium.com/@elyssa_tong/output-dc-motor-a66016f9ca85",
+        "https://medium.com/@divya_srinivasan_60839/lab-6-dc-motors-6d0fc3d6600f",
+        "https://medium.com/@cmarcelino/lab-6-output-dc-motors-3d140e35ba28"
     ]
 
     return (
@@ -18,13 +18,15 @@ export default function Updates()
             <h3>Attendence ✨</h3>
             <LinkBox url = "https://docs.google.com/spreadsheets/d/1_kJ3G7rP-pik2INGDg7g-Q1CxSCaBMzpopoU3sqzajc/edit?usp=sharing"  />
             
-            <h3>Lab 5 Highlights ✨</h3>
+            
+            <h3>Lab 6 Highlights ✨</h3>
             {links_lab.map( e =>
                 <div className="link-box-wrapper">
                     <LinkBox url = {e}  />
                 </div>
 
             )}
+            
 
         </div>
     )

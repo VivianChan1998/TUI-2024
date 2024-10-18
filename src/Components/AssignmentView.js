@@ -16,8 +16,9 @@ const options = [
     { value: 'Human Centered Design', label: 'Human Centered Design' },
     { value: 'Midterm Progress Sketches', label: 'Midterm Progress Sketches' },
     { value: 'Post-human Design', label: 'Post-human Design' },
-    { value: 'Lab 5 - Output: Piezo Speakers', label: 'Lab 5 - Output: Piezo Speakers' }
-    
+    { value: 'Lab 5 - Output: Piezo Speakers', label: 'Lab 5 - Output: Piezo Speakers' },
+    { value: 'Lab 6 - Output: DC motors', label: 'Lab 6 - Output: DC motors' },
+    { value: 'Midterm Presentation', label: 'Midterm Presentation' }
 ]
 
 
