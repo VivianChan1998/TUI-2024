@@ -22,22 +22,28 @@ export default function Midterm()
         }]
         const Feedback_forms2 = [{
             studentNames: "1. Christine, Liam, Katy, Eileen, Divya",
-            url: "https://docs.google.com/forms/d/e/1FAIpQLSfsM92Y0nFmqo9OxGe3A_WiuFIjbirZVl1qHqs7uISesyx2ew/viewform"
+            url: "https://docs.google.com/forms/d/e/1FAIpQLSfsM92Y0nFmqo9OxGe3A_WiuFIjbirZVl1qHqs7uISesyx2ew/viewform",
+            feedback_url: "https://docs.google.com/spreadsheets/d/1pbjp4rYg0nwaoRzi00ZLlCQ_1gwWXIUKNoZW7Nj0Ou0/edit?usp=sharing"
         },{
             studentNames: "2. Julien, Sebastian, Frank, Eric, Elyssa",
-            url: "https://docs.google.com/forms/d/e/1FAIpQLSdX7tl2rsrIsJc9qoGbrPLje982SJDkkRZqkEXl_riFeUxMeg/viewform"
+            url: "https://docs.google.com/forms/d/e/1FAIpQLSdX7tl2rsrIsJc9qoGbrPLje982SJDkkRZqkEXl_riFeUxMeg/viewform",
+            feedback_url: "https://docs.google.com/spreadsheets/d/15xwYHakY1v7Akzq8EankR4Hj-odLSdsQnJ_OuB1F73g/edit?usp=sharing"
         },{
             studentNames: "3. Yuto, Monica, Mary, Laila",
-            url: "https://docs.google.com/forms/d/e/1FAIpQLSeD7Yy53cghj50kbMEaJU4RTtk36cM5gIGOGSkGP9Ih6Igwhw/viewform"
+            url: "https://docs.google.com/forms/d/e/1FAIpQLSeD7Yy53cghj50kbMEaJU4RTtk36cM5gIGOGSkGP9Ih6Igwhw/viewform",
+            feedback_url: "https://docs.google.com/spreadsheets/d/1Flel2oSmRgN_iSlfWyjQKFo2RAh8FCWXABh5czO6Hv8/edit?usp=sharing"
         },{
             studentNames: "4. Salia, Andrew, Hannah, Botond, Tyler, Jared",
-            url: "https://docs.google.com/forms/d/e/1FAIpQLSfacdSK-JPd2U9DR1jATiJd8J7UU999FkOxm6sclchbaEGKDg/viewform"
+            url: "https://docs.google.com/forms/d/e/1FAIpQLSfacdSK-JPd2U9DR1jATiJd8J7UU999FkOxm6sclchbaEGKDg/viewform",
+            feedback_url: "https://docs.google.com/spreadsheets/d/1B9zNkc4W6wmEXny6gjqt_3kJuXHTnzI7M2-41D8lOSI/edit?usp=sharing"
         },{
             studentNames: "5. Aaron, Brian, Edward, Seemin, Matthieu",
-            url: "https://docs.google.com/forms/d/e/1FAIpQLSdUoUnnbALcZNtd7FxhcXCq9Mc4rAtVtaRSimuE6BCXi_bb3w/viewform"
+            url: "https://docs.google.com/forms/d/e/1FAIpQLSdUoUnnbALcZNtd7FxhcXCq9Mc4rAtVtaRSimuE6BCXi_bb3w/viewform",
+            feedback_url: "https://docs.google.com/spreadsheets/d/1H5hOYDIRC0qW_6z0sbEq17h50isBkzKsJdvXrxN9d2s/edit?usp=sharing"
         },{
             studentNames: "6. Marissa, Paloma, Sonja, Evan (Nami), Gyuyeon",
-            url: "https://docs.google.com/forms/d/e/1FAIpQLScX00onp4EFB7zN4hyqhpKgz78rOQKuANupD4XAyX6i4jCY2Q/viewform"
+            url: "https://docs.google.com/forms/d/e/1FAIpQLScX00onp4EFB7zN4hyqhpKgz78rOQKuANupD4XAyX6i4jCY2Q/viewform",
+            feedback_url: "https://docs.google.com/spreadsheets/d/13mBgP2ShlOngpNP7E0iDraJM6Q7q4cmX4zUi0p05WoE/edit?usp=sharing"
         }
     ]
     return(
@@ -58,7 +64,7 @@ export default function Midterm()
 
             {Feedback_forms2.map( e =>
                 <div className="link-box-wrapper">
-                    <Group studentNames={e.studentNames} url={e.url}  />
+                    <Group studentNames={e.studentNames} url={e.url} feedback_url={e.feedback_url}  />
                 </div>
 
             )}

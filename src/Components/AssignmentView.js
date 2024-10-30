@@ -18,7 +18,9 @@ const options = [
     { value: 'Post-human Design', label: 'Post-human Design' },
     { value: 'Lab 5 - Output: Piezo Speakers', label: 'Lab 5 - Output: Piezo Speakers' },
     { value: 'Lab 6 - Output: DC motors', label: 'Lab 6 - Output: DC motors' },
-    { value: 'Midterm Presentation', label: 'Midterm Presentation' }
+    { value: 'Midterm Presentation', label: 'Midterm Presentation' },
+    { value: 'Lab 7 - Output: Servo motors', label: 'Lab 7 - Output: Servo motors' },
+    { value: 'Lab 8 - Output: Simple Mechanics', label: 'Lab 8 - Output: Simple Mechanics'}
 ]
 
 

@@ -4,12 +4,12 @@ import { LinkBox } from './AssignmentView';
 export default function Updates()
 {
     const links_lab = [
-        "https://medium.com/@tranmary/lab-6-output-dc-motors-ca4f9d7f6dad",
-        "https://medium.com/@liam_hatakenaka/lab-6-output-w-dc-motors-bf2085bb03f9",
-        "https://medium.com/@gyuyeon/lab-6-output-dc-motors-c9b31369a592",
-        "https://medium.com/@elyssa_tong/output-dc-motor-a66016f9ca85",
-        "https://medium.com/@divya_srinivasan_60839/lab-6-dc-motors-6d0fc3d6600f",
-        "https://medium.com/@cmarcelino/lab-6-output-dc-motors-3d140e35ba28"
+        "https://medium.com/@swang34/lab-7-servo-motor-67cc8941fb76",
+        "https://medium.com/@edwardfraser_1948/lab-7-servo-motors-098cfa1121cf",
+        "https://medium.com/@gyuyeon/lab-7-output-servo-motors-1df0992aa2e2",
+        "https://medium.com/@junyandu/lab-submission-lab-7-output-servo-motors-7ed4caee7b88",
+        "https://medium.com/@palomabondi/lab-7-output-servo-motors-61dc54112ef7",
+        "https://medium.com/@praj_pandit/output-servo-motors-1ac43a53c685"
     ]
 
     return (
@@ -18,14 +18,26 @@ export default function Updates()
             <h3>Attendence ✨</h3>
             <LinkBox url = "https://docs.google.com/spreadsheets/d/1_kJ3G7rP-pik2INGDg7g-Q1CxSCaBMzpopoU3sqzajc/edit?usp=sharing"  />
             
-            
-            <h3>Lab 6 Highlights ✨</h3>
+            {/*
+            <h3>Lab 7 Highlights ✨</h3>
             {links_lab.map( e =>
                 <div className="link-box-wrapper">
                     <LinkBox url = {e}  />
                 </div>
 
             )}
+                */}
+
+            <h3>Crawler Race !! ✨</h3>
+
+            <iframe width="315" height="560"
+            src="https://www.youtube.com/embed/gwTmgdepJh8?si=W4Z80-KlCa96eYnd"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+
+
             
 
         </div>
