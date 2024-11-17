@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/TUI-2024/static/css/main.4b2ff009.css",
-    "main.js": "/TUI-2024/static/js/main.e8f3960e.js",
+    "main.js": "/TUI-2024/static/js/main.66785740.js",
     "static/js/453.bb828c5d.chunk.js": "/TUI-2024/static/js/453.bb828c5d.chunk.js",
     "index.html": "/TUI-2024/index.html",
     "main.4b2ff009.css.map": "/TUI-2024/static/css/main.4b2ff009.css.map",
-    "main.e8f3960e.js.map": "/TUI-2024/static/js/main.e8f3960e.js.map",
+    "main.66785740.js.map": "/TUI-2024/static/js/main.66785740.js.map",
     "453.bb828c5d.chunk.js.map": "/TUI-2024/static/js/453.bb828c5d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4b2ff009.css",
-    "static/js/main.e8f3960e.js"
+    "static/js/main.66785740.js"
   ]
 }
